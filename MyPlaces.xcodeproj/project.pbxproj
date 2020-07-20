@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4070C1A24C54AA000FFB1A9 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4070C1924C54AA000FFB1A9 /* PlaceModel.swift */; };
 		B46DD7D724C420A700F36891 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46DD7D624C420A700F36891 /* CustomTableViewCell.swift */; };
 		B495C37224BEB0CA00DA0074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495C37124BEB0CA00DA0074 /* AppDelegate.swift */; };
 		B495C37424BEB0CA00DA0074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495C37324BEB0CA00DA0074 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4070C1924C54AA000FFB1A9 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		B46DD7D624C420A700F36891 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		B495C36E24BEB0CA00DA0074 /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B495C37124BEB0CA00DA0074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				B495C37124BEB0CA00DA0074 /* AppDelegate.swift */,
 				B495C37324BEB0CA00DA0074 /* SceneDelegate.swift */,
 				B495C38524BEB12F00DA0074 /* MainViewController.swift */,
+				B4070C1924C54AA000FFB1A9 /* PlaceModel.swift */,
 				B46DD7D624C420A700F36891 /* CustomTableViewCell.swift */,
 				B495C37724BEB0CA00DA0074 /* Main.storyboard */,
 				B495C37A24BEB0CF00DA0074 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				B495C38624BEB12F00DA0074 /* MainViewController.swift in Sources */,
 				B495C37224BEB0CA00DA0074 /* AppDelegate.swift in Sources */,
+				B4070C1A24C54AA000FFB1A9 /* PlaceModel.swift in Sources */,
 				B46DD7D724C420A700F36891 /* CustomTableViewCell.swift in Sources */,
 				B495C37424BEB0CA00DA0074 /* SceneDelegate.swift in Sources */,
 			);
