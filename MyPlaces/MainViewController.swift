@@ -51,12 +51,35 @@ class MainViewController: UITableViewController {
     
     // MARK: - Table view delegate
     
+    // New methods from iOS 13.0.6/ It works.
+    
+//    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//
+//        let place = places[indexPath.row]
+//
+//      let DeleteAction = UIContextualAction(style: .destructive, title: "Delete", handler: { (action, view, success) in
+//          print("Delete")
+//          StorageManager.deleteObject(place)
+//          tableView.deleteRows(at: [indexPath], with: .automatic)
+//      })
+//      DeleteAction.backgroundColor = .red
+//      return UISwipeActionsConfiguration(actions: [DeleteAction])
+//    }
+    
+    // Old methods from vieo lesson
+    
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
+
         let place = places[indexPath.row]
-        
+
+//        let deleteActionNew = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
+//            StorageManager.deleteObject(place)
+//            tableView.deleteRows(at: [indexPath], with: .automatic)
+//            completionHandler(true)
+//        }
+//
         let deleteAction = UITableViewRowAction(style: .default, title: "Delete") { (_, _) in
-            
+
             StorageManager.deleteObject(place)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
