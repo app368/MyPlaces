@@ -67,6 +67,7 @@
                                     <outlet property="locationLabel" destination="hbJ-7h-QvS" id="Jx2-5y-oKS"/>
                                     <outlet property="nameLabel" destination="9Nh-45-qlE" id="jFP-Dx-ha2"/>
                                     <outlet property="typeLabel" destination="iLb-PM-tgm" id="cv3-Pu-wB0"/>
+                                    <segue destination="96M-ek-WeU" kind="show" identifier="showDetail" id="hFv-5y-k6B"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -75,7 +76,7 @@
                             <outlet property="delegate" destination="5Eb-nH-UQV" id="qIj-Ab-dpl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Places" id="84o-wv-62R">
+                    <navigationItem key="navigationItem" title="My Places" largeTitleDisplayMode="never" id="84o-wv-62R">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="exb-Ed-Hgf">
                             <connections>
                                 <segue destination="Jae-MY-651" kind="presentation" modalTransitionStyle="flipHorizontal" id="yFN-yE-lqB"/>
@@ -85,7 +86,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XB3-Oh-NeG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615.94202898550725" y="65.625"/>
+            <point key="canvasLocation" x="1329" y="66"/>
         </scene>
         <!--New Place-->
         <scene sceneID="kvu-hw-4j5">
@@ -232,7 +233,7 @@
                             <outlet property="delegate" destination="96M-ek-WeU" id="CDX-ge-2VY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Place" id="Uz7-Jb-Agv">
+                    <navigationItem key="navigationItem" title="New Place" largeTitleDisplayMode="always" id="Uz7-Jb-Agv">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="BeQ-Zw-a63">
                             <connections>
                                 <action selector="cancelAction:" destination="96M-ek-WeU" id="qZE-8v-9An"/>
@@ -261,8 +262,8 @@
         <scene sceneID="ZC5-68-xcr">
             <objects>
                 <navigationController id="dQG-aD-TR7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Gb-9O-c8a">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="3Gb-9O-c8a">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
@@ -274,7 +275,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPE-mu-Ymg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-67" y="66"/>
+            <point key="canvasLocation" x="548" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZAj-hq-3hZ">
@@ -292,9 +293,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JI2-Fs-RLp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340.5797101449277" y="65.625"/>
+            <point key="canvasLocation" x="2116" y="-681"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dL9-47-bom"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Photo" width="195" height="196"/>
     </resources>
