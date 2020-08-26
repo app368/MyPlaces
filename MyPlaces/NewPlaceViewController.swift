@@ -142,10 +142,6 @@ class NewPlaceViewController: UITableViewController {
     }
     
     
-    
-    
-    
-    
     @IBAction func cancelAction(_ sender: UIBarButtonItem) {
         
         dismiss(animated: true)
