@@ -11,7 +11,7 @@
         <scene sceneID="kvu-hw-4j5">
             <objects>
                 <tableViewController id="96M-ek-WeU" customClass="NewPlaceViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2rU-IK-avG">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2rU-IK-avG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -151,7 +151,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-aT-E38" customClass="RatingControl" customModule="MyPlaces" customModuleProvider="target">
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="252" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-aT-E38" customClass="RatingControl" customModule="MyPlaces" customModuleProvider="target">
                                                     <rect key="frame" x="81" y="48" width="252" height="44"/>
                                                 </stackView>
                                             </subviews>
@@ -286,7 +286,7 @@
                             <constraint firstItem="UDm-I9-EdW" firstAttribute="trailing" secondItem="KbS-SX-mse" secondAttribute="trailing" id="cQV-pg-4lp"/>
                             <constraint firstItem="UDm-I9-EdW" firstAttribute="top" secondItem="KbS-SX-mse" secondAttribute="top" id="gZu-CN-pir"/>
                             <constraint firstItem="GSU-XN-Fya" firstAttribute="top" secondItem="UDm-I9-EdW" secondAttribute="bottom" constant="1" id="hMg-yA-olJ"/>
-                            <constraint firstAttribute="bottom" secondItem="GSU-XN-Fya" secondAttribute="bottom" id="k6b-o3-dV8"/>
+                            <constraint firstItem="GSU-XN-Fya" firstAttribute="bottom" secondItem="SkS-A6-4SP" secondAttribute="bottom" id="k6b-o3-dV8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KbS-SX-mse"/>
                     </view>
