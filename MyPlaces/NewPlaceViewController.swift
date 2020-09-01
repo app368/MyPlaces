@@ -13,7 +13,6 @@ import UIKit
 class NewPlaceViewController: UITableViewController {
     
     var currentPlace: Place!
-    
     var imageIsChanged = false
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
@@ -122,7 +121,6 @@ class NewPlaceViewController: UITableViewController {
         if currentPlace != nil {
             
             setupNavigationBar()
-            
             imageIsChanged = true
             
             guard let data = currentPlace?.imageData, let image = UIImage(data: data) else { return }
