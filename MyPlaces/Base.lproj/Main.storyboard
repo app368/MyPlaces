@@ -230,12 +230,25 @@
                                     <action selector="closeVC" destination="tBz-KW-1AD" eventType="touchUpInside" id="dUJ-NA-xUA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNz-wD-mYH">
+                                <rect key="frame" x="324" y="718" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="QiZ-3u-YSr"/>
+                                    <constraint firstAttribute="height" constant="50" id="Uiv-Fe-YtF"/>
+                                </constraints>
+                                <state key="normal" image="Location"/>
+                                <connections>
+                                    <action selector="centerViewInUserLocation" destination="tBz-KW-1AD" eventType="touchUpInside" id="kaq-EL-FHJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="WZg-Tr-gvH" firstAttribute="trailing" secondItem="yNz-wD-mYH" secondAttribute="trailing" constant="40" id="Hdz-iw-5YZ"/>
                             <constraint firstItem="WZg-Tr-gvH" firstAttribute="trailing" secondItem="s1b-9Q-YAG" secondAttribute="trailing" constant="40" id="NU6-NR-L7H"/>
                             <constraint firstAttribute="bottom" secondItem="G93-z2-7cg" secondAttribute="bottom" id="WFl-ZT-bNy"/>
                             <constraint firstItem="G93-z2-7cg" firstAttribute="top" secondItem="vDc-mR-G19" secondAttribute="top" id="ZeX-8A-9iY"/>
+                            <constraint firstItem="WZg-Tr-gvH" firstAttribute="bottom" secondItem="yNz-wD-mYH" secondAttribute="bottom" constant="40" id="nf0-JL-Qn1"/>
                             <constraint firstItem="s1b-9Q-YAG" firstAttribute="top" secondItem="WZg-Tr-gvH" secondAttribute="top" constant="40" id="oRd-pW-pYi"/>
                             <constraint firstItem="G93-z2-7cg" firstAttribute="leading" secondItem="WZg-Tr-gvH" secondAttribute="leading" id="ydF-e7-I9I"/>
                             <constraint firstItem="G93-z2-7cg" firstAttribute="trailing" secondItem="WZg-Tr-gvH" secondAttribute="trailing" id="z0m-so-vir"/>
@@ -428,6 +441,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="Location" width="128" height="128"/>
         <image name="Photo" width="194.66667175292969" height="195.66667175292969"/>
         <image name="camcel" width="128" height="128"/>
         <image name="emptyStar" width="255" height="256"/>
