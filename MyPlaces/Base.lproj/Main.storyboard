@@ -277,12 +277,24 @@
                                     <action selector="centerViewInUserLocation" destination="tBz-KW-1AD" eventType="touchUpInside" id="kaq-EL-FHJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yJ-bR-MVr">
+                                <rect key="frame" x="182" y="718" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jHV-RF-qZh"/>
+                                    <constraint firstAttribute="width" constant="50" id="tro-AU-ZMo"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="tBz-KW-1AD" eventType="touchUpInside" id="4zx-Ob-Hm9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="WZg-Tr-gvH" firstAttribute="bottom" secondItem="yNz-wD-mYH" secondAttribute="bottom" constant="136" id="8BX-fD-VeF"/>
                             <constraint firstItem="XGp-b7-TIw" firstAttribute="leading" secondItem="WZg-Tr-gvH" secondAttribute="leading" constant="16" id="BhW-L4-KIF"/>
                             <constraint firstItem="8GU-jq-3lU" firstAttribute="centerX" secondItem="vDc-mR-G19" secondAttribute="centerX" id="KUF-tb-NMc"/>
+                            <constraint firstItem="WZg-Tr-gvH" firstAttribute="bottom" secondItem="1yJ-bR-MVr" secondAttribute="bottom" constant="40" id="N5W-rP-95I"/>
                             <constraint firstItem="WZg-Tr-gvH" firstAttribute="trailing" secondItem="s1b-9Q-YAG" secondAttribute="trailing" constant="40" id="NU6-NR-L7H"/>
                             <constraint firstItem="8GU-jq-3lU" firstAttribute="centerY" secondItem="vDc-mR-G19" secondAttribute="centerY" constant="-20" id="PWo-Fm-TJt"/>
                             <constraint firstAttribute="bottom" secondItem="G93-z2-7cg" secondAttribute="bottom" id="WFl-ZT-bNy"/>
@@ -292,6 +304,7 @@
                             <constraint firstItem="WZg-Tr-gvH" firstAttribute="bottom" secondItem="1Yb-UY-sSP" secondAttribute="bottom" constant="40" id="mOe-hp-GCg"/>
                             <constraint firstItem="s1b-9Q-YAG" firstAttribute="top" secondItem="WZg-Tr-gvH" secondAttribute="top" constant="40" id="oRd-pW-pYi"/>
                             <constraint firstItem="WZg-Tr-gvH" firstAttribute="trailing" secondItem="yNz-wD-mYH" secondAttribute="trailing" constant="40" id="vRL-hS-DVY"/>
+                            <constraint firstItem="1yJ-bR-MVr" firstAttribute="centerX" secondItem="vDc-mR-G19" secondAttribute="centerX" id="wlv-NY-ZsJ"/>
                             <constraint firstItem="G93-z2-7cg" firstAttribute="top" secondItem="XGp-b7-TIw" secondAttribute="bottom" constant="-173" id="y1Q-kO-RBF"/>
                             <constraint firstItem="G93-z2-7cg" firstAttribute="leading" secondItem="WZg-Tr-gvH" secondAttribute="leading" id="ydF-e7-I9I"/>
                             <constraint firstItem="G93-z2-7cg" firstAttribute="trailing" secondItem="WZg-Tr-gvH" secondAttribute="trailing" id="z0m-so-vir"/>
@@ -301,6 +314,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="XGp-b7-TIw" id="4Gi-Ra-fej"/>
                         <outlet property="doneButton" destination="1Yb-UY-sSP" id="t1f-xu-VNq"/>
+                        <outlet property="goButton" destination="1yJ-bR-MVr" id="4CK-G5-BQl"/>
                         <outlet property="mapPinImage" destination="8GU-jq-3lU" id="e9Z-HJ-Wzr"/>
                         <outlet property="mapView" destination="G93-z2-7cg" id="wGB-DT-3Ut"/>
                     </connections>
@@ -483,11 +497,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lV5-Ju-Kac"/>
+        <segue reference="sZ4-Nr-fqo"/>
         <segue reference="DGn-2d-H1R"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="GetDirection" width="50" height="50"/>
         <image name="Location" width="128" height="128"/>
         <image name="Photo" width="194.66667175292969" height="195.66667175292969"/>
         <image name="Pin" width="40" height="40"/>
